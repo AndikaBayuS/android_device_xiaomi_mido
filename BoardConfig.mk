@@ -49,11 +49,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-# Audio/media/display
-TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
-TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
-TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
-
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
 AUDIO_FEATURE_ENABLED_ALAC_OFFLOAD := true
@@ -89,7 +84,6 @@ TARGET_NO_BOOTLOADER := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
-TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8996
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -200,7 +194,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/recovery/fstab.qcom
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-include vendor/omni/sepolicy/sepolicy.mk
+include vendor/du/sepolicy/sepolicy.mk
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true

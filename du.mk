@@ -22,15 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
 # Inherit from Omni custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
-PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+$(call inherit-product, vendor/du/config/common.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := omni_mido
+PRODUCT_NAME := du_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi

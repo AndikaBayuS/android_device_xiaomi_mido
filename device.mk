@@ -199,10 +199,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libandroid_net
 
-# OMNI Charger Images
-PRODUCT_PACKAGES += \
-    omni_charger_res_images
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \

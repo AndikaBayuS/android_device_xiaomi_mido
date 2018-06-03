@@ -114,9 +114,29 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     Snap
 
+<<<<<<< HEAD
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
+=======
+PRODUCT_PACKAGES += \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0_vendor
+
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
+
+# Consumerir
+PRODUCT_PACKAGES += \
+    consumerir.msm8953
+
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl
+>>>>>>> parent of 71bce4e... mido: add Advanced device settings
 
 # Display
 PRODUCT_PACKAGES += \

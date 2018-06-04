@@ -83,7 +83,7 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/HAL3 \
         hardware/libhardware/include/hardware \
         $(call project-path-for,qcom-media)/libstagefrighthw \
-        $(call project-path-for,qcom-media)mm-core/inc \
+        $(call project-path-for,qcom-media)/mm-core/inc \
         system/core/include/cutils \
         system/core/include/system \
         system/media/camera/include/system
